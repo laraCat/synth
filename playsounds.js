@@ -14,7 +14,7 @@ T("audio").load("/drumkit.wav", function() {
 drum = T("lowshelf", {freq:110, gain:8, mul:0.6}, BD).play()
 BD = this.slice(0, 500).set({bang:false})
 })
-var socket = io.connect('http://192.168.1.2:3035')
+var socket = io.connect('http://192.168.1.4:3037')
 socket.on('connect', function () {
 console.log('connected to socket')
 })
