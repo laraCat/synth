@@ -10,7 +10,7 @@ var Edison = require("edison-io");// Edison IO Library
 ////after putting this here and tibre library in app.js, got no such device errors in edison's console (plug in sound card?)
 
 var BD;
-T("audio").load("/drumkit.wav", function() {
+T("audio").load("./drumkit.wav", function() {
 drum = T("lowshelf", {freq:110, gain:8, mul:0.6}, BD).play()
 BD = this.slice(0, 500).set({bang:false})
 })
