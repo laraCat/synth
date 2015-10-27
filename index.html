@@ -1,0 +1,27 @@
+<html>
+<script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+<script src="js/timbre.js"></script>
+<script src="js/subcollider.js"></script>
+<script src="js/playsounds.js"></script>
+<script type="text/javascript">
+
+var socket = io.connect('http://192.168.1.2:8080')
+socket.on('connect', function () {
+console.log('connected to socket')
+})
+
+socket.on('button', function(buttonState) {
+console.log('button state:', buttonState)
+})
+
+socket.on('analogSensor', function(analogVal){
+	console.log('sensor value', analogVal)
+})
+
+
+</script>
+<body>
+    </script> 
+(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+</body>
+</html>
