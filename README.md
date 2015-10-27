@@ -37,8 +37,10 @@ alternatively<br>
 trigger sine wave with button<br>
 T("sin").play();<br>
 </p>
-<p>
-change frequency with analog values<br>
+<p>change frequency with analog values<br>
 T("sin", {freq:880}).play();<br>
 </p>
+<p>
+<b>Issue</b>
+I can not figure out how to get the analog values out from the socket.io function. If I can just free that up, I would like to change filters and frequencies of triggered sounds using Timbre.js. Tried declaring a global variable, then plugging that in to no avail. As well as nesting the things I wanted to change in the socket.on function callback, which only triggered it whenever a value was sent from the pot.  
 
