@@ -1,36 +1,44 @@
-# second skin synth
-Using Intel Edison with Arduino breakout board (eventually mini breakout)
-running Yocto 2.1 release 
-https://software.intel.com/en-us/iot/hardware/edison/downloads
-
-Hardware setup:
-1 potentiometer on Analog 0
-1 button on D2
-
-Libraries/frameworks installed and being used:
-Cylon.js for input readings 
-Timbre.js for playing audio files 
-http://mohayonao.github.io/timbre.js/
-
-socket.io
-express 
-cylon-intel-iot
+# second skin synth<br>
+<p>
+Using Intel Edison with Arduino breakout board (eventually mini breakout)<br>
+running Yocto 2.1 release <br>
+https://software.intel.com/en-us/iot/hardware/edison/downloads<br>
+</p>
+<p>
+<b>Hardware setup:</b><br>
+1 potentiometer on Analog 0<br>
+1 button on D2<br>
+</p>
+<p>
+<b>Libraries/frameworks installed and being used:</b>
+Cylon.js for input readings <br>
+Timbre.js for playing audio files <br>
+http://mohayonao.github.io/timbre.js/<br>
+</p>
+<p>
+socket.io<br>
+express <br>
+cylon-intel-iot<br>
 node
-
-File setup on Edison:
-Running app.js from root
-all files automatically served from 'public' folder
-playsounds.js holds all the timbre.js code
-
-Goal:
-trigger sound file button (works)
-change delay with analog values from pot
-
-alternatively
-trigger sine wave with button
-T("sin").play();
-
-change frequency with analog values
-T("sin", {freq:880}).play();
-
+</p>
+<p>
+<b>File setup on Edison:</b><br>
+Running app.js from root<br>
+all files automatically served from 'public' folder<br>
+playsounds.js holds all the timbre.js code<br>
+</p>
+<p>
+<b>Goal:</b><br>
+trigger sound file button (works)<br>
+change delay with analog values from pot<br>
+</p>
+<p>
+alternatively<br>
+trigger sine wave with button<br>
+T("sin").play();<br>
+</p>
+<p>
+change frequency with analog values<br>
+T("sin", {freq:880}).play();<br>
+</p>
 
