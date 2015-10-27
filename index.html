@@ -7,15 +7,15 @@
 
 var socket = io.connect('http://192.168.1.2:8080')
 socket.on('connect', function () {
-console.log('connected to socket')
+console.log('connected to socket');
 })
 
 socket.on('button', function(buttonState) {
-console.log('button state:', buttonState)
+console.log('button state:', buttonState);
 })
 
-socket.on('analogSensor', function(analogVal){
-	console.log('sensor value', analogVal)
+socket.on('analog', function(data){
+	console.log(data);
 })
 
 
