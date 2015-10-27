@@ -23,8 +23,8 @@ node
 </p>
 <p>
 <b>File setup on Edison:</b><br>
-Running app.js from root<br>
-all files automatically served from 'public' folder<br>
+Running app.js from root dir<br>
+index.html, drumkit.wav and js/ folder are automatically served from 'public' folder (public folder didn't make it to the github repo)<br>
 playsounds.js holds all the timbre.js code<br>
 </p>
 <p>
