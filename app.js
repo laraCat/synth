@@ -44,13 +44,18 @@ my.button.on('release', function() {
 socket.emit('button', 'release')
 })
 
-  my.sensor.on('upperLimit', function(val) {
-      //console.log("Upper limit reached ===> " + val);
-      socket.emit('analogSensor', val)
+    var analogValue = 0;
 
+    every((1).second(), function() {
+      analogValue = my.sensor.analogRead();
+      console.log('Analog value => ', analogValue);
+      socket.emit('analog', analogValue);
     });
+
+
 
   }
 
+     
                                   
 
